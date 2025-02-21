@@ -37,6 +37,9 @@
     "env": {
       // "KEY": "value1:value2"
       "RUST_LOG": "debug"
+    },
+    "line_height": {
+      "custom": 1.2
     }
   }
   // "format_on_save": "off"

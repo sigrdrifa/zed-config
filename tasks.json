@@ -51,7 +51,9 @@
     "args": [],
     "env": {},
     "use_new_terminal": true,
-    "allow_concurrent_runs": false
+    "allow_concurrent_runs": false,
+    "working_directory": "${ZED_WORKTREE_ROOT}",
+    "hide": "on_success"
   },
   {
     "label": "Docker",
@@ -59,7 +61,9 @@
     "args": [],
     "env": {},
     "use_new_terminal": true,
-    "allow_concurrent_runs": false
+    "allow_concurrent_runs": false,
+    "working_directory": "${ZED_WORKTREE_ROOT}",
+    "hide": "on_success"
   },
   {
     "label": "Unit Tests",
@@ -67,6 +71,7 @@
     "args": ["test"],
     "env": {},
     "use_new_terminal": true,
-    "allow_concurrent_runs": false
+    "allow_concurrent_runs": false,
+    "working_directory": "${ZED_WORKTREE_ROOT}"
   }
 ]

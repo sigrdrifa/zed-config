@@ -7,6 +7,11 @@
 // from the command palette.
 [
   {
+    "bindings": {
+      "ctrl-n": "workspace::ToggleLeftDock"
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
@@ -26,6 +31,10 @@
         "task::Spawn",
         { "task_name": "Git Status", "reveal_target": "center" }
       ],
+      "space l g": [
+        "task::Spawn",
+        { "task_name": "Git Status", "reveal_target": "center" }
+      ],
       "space l d": [
         "task::Spawn",
         { "task_name": "Docker", "reveal_target": "center" }
@@ -33,7 +42,13 @@
       "space t t": [
         "task::Spawn",
         { "task_name": "Unit Tests", "reveal_target": "center" }
-      ]
+      ],
+      "space f f": "file_finder::Toggle",
+      "space q": ["pane::CloseActiveItem", { "close_pinned": false }],
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-l": "pane::ActivateNextItem",
+      "ctrl-e": "project_panel::ToggleFocus",
+      "ctrl-t": "terminal_panel::ToggleFocus"
     }
   }
 ]
