@@ -1,0 +1,39 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      "space g g": [
+        "task::Spawn",
+        { "task_name": "Git Status", "reveal_target": "center" }
+      ],
+      "space l d": [
+        "task::Spawn",
+        { "task_name": "Docker", "reveal_target": "center" }
+      ],
+      "space t t": [
+        "task::Spawn",
+        { "task_name": "Unit Tests", "reveal_target": "center" }
+      ]
+    }
+  }
+]
