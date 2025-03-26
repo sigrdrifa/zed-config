@@ -39,16 +39,21 @@
         "task::Spawn",
         { "task_name": "Docker", "reveal_target": "center" }
       ],
+      "space l s": [
+        "task::Spawn",
+        { "task_name": "Database", "reveal_target": "center" }
+      ],
       "space t t": [
         "task::Spawn",
         { "task_name": "Unit Tests", "reveal_target": "center" }
       ],
       "space f f": "file_finder::Toggle",
       "space q": ["pane::CloseActiveItem", { "close_pinned": false }],
-      "shift-h": "pane::ActivatePrevItem",
+      "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem",
       "ctrl-e": "project_panel::ToggleFocus",
       "ctrl-t": "terminal_panel::ToggleFocus"
     }
   }
 ]
+
